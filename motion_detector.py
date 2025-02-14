@@ -9,7 +9,7 @@ df = pandas.DataFrame(columns=["Start", "End"])
 # Initialize webcam and save motion as mp4 file
 video = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter('output1.mp4', fourcc, 33.0, (640, 480))
+out = cv2.VideoWriter('video_capture/output1.mp4', fourcc, 33.0, (640, 480))
 
 while True:
     check, frame = video.read()
